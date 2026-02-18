@@ -1,5 +1,5 @@
 ---
-title: 'Prompts Are Eating the World'
+title: 'prompts are eating the world'
 author: 'Farouk Adeleke'
 date: '14 Oct 2025'
 description: 'Software is changing again, not incrementally, but fundamentally. This post sums up why declarative AI programming (and our intuition about DSPy) is an eventual next step in the software evolution, and why open infrastructure like Modaic must exist to enable it.'

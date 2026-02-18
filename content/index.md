@@ -1,5 +1,5 @@
 ---
-title: Hi, I'm Farouk!
+title: hi, i'm farouk!
 description: Currently building infrastructure for reliable AI software @ [Modaic](https://modaic.dev)
 ---
 ![Profile](./notion-face.png)

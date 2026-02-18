@@ -33,7 +33,7 @@ export default {
       title: "Lesemodus",
     },
     explorer: {
-      title: "Explorer",
+      title: "explorer",
     },
     footer: {
       createdWith: "Erstellt mit",

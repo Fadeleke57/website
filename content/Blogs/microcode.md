@@ -1,5 +1,5 @@
 ---
-title: 'Microcode - the first fully RLM-powered terminal agent'
+title: 'microcode - the first fully RLM-powered terminal agent'
 author: 'Farouk Adeleke'
 date: '25 Jan 2026'
 description: 'Microcode is a context-efficient terminal agent powered by Recursive Language Models (RLMs). How RLMs solve the context-rot problem and enable long-horizon coding tasks.'
