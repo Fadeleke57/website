@@ -1,5 +1,5 @@
 ---
-title: 'Labs hill climbing on evals means you should format your prompts and problems like evals'
+title: 'Give the labs something to hill climb on'
 draft: True
 description: 'Why parametizing your prompts is the best thing since sliced bread'
 ---
