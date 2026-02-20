@@ -6,3 +6,4 @@ description: 'Why I bet on interpretability + prompt compilers as the solvent fo
 - Why care about interpretability: https://www.goodfire.ai/blog/on-optimism-for-interpretability
 - Anthropic bets on Goodfire: https://youtu.be/Gjw0oBznXuQ?si=vX_ouAzMJ2OBvPC7&t=66
 - Examples: redteaming, probing, etc.
+- Unlocking interpretability will empirically complete the software 3.0 computer
