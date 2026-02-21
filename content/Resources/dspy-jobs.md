@@ -1,5 +1,5 @@
 ---
-title: dspy jobs
-description: dspy jobs
+title: DSPy Jobs
+description: DSPy jobs
 ---
 
