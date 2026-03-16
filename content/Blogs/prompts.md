@@ -12,11 +12,11 @@ After decades in practice, we've seen two very interesting shifts happen close t
 
 ---
 
-# I. Software's Essence
+## I. Software's Essence
 
 To preface, I'll assume you already know what software is, but for those who don't, it's instructions that tell computers how to manipulate or mutate information and automate tasks. For a long time, these instructions took the form of code: humans translating their intent into increasingly higher-level programming languages, from machine code to assembly to C to Python. More formally, software is a set of computer programs that instruct the execution of a computer. For the sake of this blog, we can apply this definition to the term **Declarative AI Software**, which is a set of **Declarative AI Programs**, compiled by a declarative framework like [DSPy](https://dspy.ai/) or Microsoft's [Trace library](https://microsoft.github.io/Trace/).
 
-# II. AI Software Will Eat Labor
+## II. AI Software Will Eat Labor
 
 Marc Andreessen wrote that "**software is eating the world.**" But as Ben Horowitz points out in his a16z talk, software (relatively) hasn't actually replaced that much at all.
 
@@ -29,7 +29,7 @@ To frame this a bit better, consider this:
 
 The gap is huge. As Ben Horowitz quoted, **almost every software company to date has essentially taken a "filing cabinet" and turned it into a database.** Sabre's airline reservation system in the 1960s and Epic's electronic health records to Workday's HR systems are good examples of this. We've digitized the workflows (moved from paper to mainframe to cloud), but we haven't replaced the labor.
 
-The filing cabinets were read by humans. The databases are read by humans. The medium changed from paper to mainframe to cloud, but the humans remained. The phrase for this is human-in-the-loop automation.
+The filing cabinets were read by humans. The databases are read by humans. The medium changed from paper to mainframe to cloud, but the humans remained. Humans have always been in the loop.
 
 Take Zendesk as an example: 1,000 support agents (humans) answering questions costs roughly 75 million per year. Zendesk itself? Just 1.4 million. The software cost is a rounding error compared to the labor cost. Each answer costs ~38 in human labor, 0.69 in software.
 
@@ -37,7 +37,7 @@ If AI can answer those questions end-to-end, Zendesk's revenue for this customer
 
 "Software eats labor" means that instead of just digitizing the workflows, we're now digitizing the labor with AI components that can act on the behalf of a human. Its also interesting to note that instead of training one massive model to do everything, we're composing multiple LLM calls, retrievers, tools, and logic into coherent multi-agent systems. A layer of traditional software over the AI components. It's very software-esque.
 
-# III. AI applications as an Operating System
+## III. AI applications as an Operating System
 
 The problem facing a large majority in this space is how to frame the AI landscape, both within their own systems and in a infrastructure sense. A good mental model I've found very helpful, and a consensus I'm starting to see more of, is to think of AI applications like a metaphorical operating system. We interact and delegate tasks to an OS similarly to how we interact with an LLM. You also see a lot of AI infra startups popping up to support components of this hypothetical OS.
 
@@ -53,7 +53,7 @@ _Andrej Karpathy's visualization of an "LLM OS" ([link](https://x.com/karpathy/s
 
 And like any computer architecture, it needs its own programming paradigms, development practices, and infrastructure, none of which has been fully standardized yet.
 
-# IV. Software 3.0: Prompts Are Eating Through the Stack
+## IV. Software 3.0: Prompts Are Eating Through the Stack
 
 <iframe width="850" height="500" src="https://www.youtube.com/embed/LCEmiRjPEtQ?si=98ttQc4qEnYBOXzF&start=250" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full rounded-md my-12"></iframe>
 
@@ -67,7 +67,7 @@ Now we're seeing it again.
 
 **Note:** Neural networks went from being fixed-function computers (image -> categories) to being **programmable computers**. Your prompts are programs, but for the most part, manual prompt-tuning is a static process.
 
-# V. The Fuzzy State of Prompts
+## V. The Fuzzy State of Prompts
 
 The problem is that prompts (and AI Engineering as a whole) are in a fuzzy, pre-scientific state.
 
@@ -82,7 +82,7 @@ Prompt engineering today looks something like...
 
 When you talk to a human, you adjust your communication style, add emphasis, micromanage maybe. For some reason, our current standards for prompt engineering apply human communication patterns to machines.
 
-# VI. A Necessary Abstraction
+## VI. A Necessary Abstraction
 
 A glimmer of hope is forming though. Prompt optimizers like GEPA, OPRO and DSPy's MIPRO(v2) represent a step in the right direction: they offer systematic, algorithmic approaches to generating and refining prompts instead of manual iteration.
 
@@ -92,7 +92,7 @@ This is the natural evolution. Just as we moved from manually flipping bits to u
 
 Omar Khattab - Creator of DSPy
 
-# VII. DSPy: The Compiler for the LLM OS
+## VII. DSPy: The Compiler for the LLM OS
 
 What is DSPy? It stands for "**D**eclarative **S**elf-improving **Py**thon". Think of it as the compiler that bridges:
 
@@ -107,7 +107,7 @@ You notice a similar abstraction in the introduction of assembly language. It br
 
 In DSPy, you don't write prompts. You write **signatures** that specify input or output behavior, select **modules** that define certain prompting strategies, and run **optimizers** that automatically compile your specifications into effective prompts and weights. The result is programs that are way more reliable, maintainable, and portable across models. Programs that improve over time as better optimizers become available and new models are released.
 
-# VIII. From Programs to Software
+## VIII. From Programs to Software
 
 To reiterate, a collection of programs (or declarative AI programs) assembled to complete a business function is called **software**.
 
@@ -123,13 +123,13 @@ Each paradigm also brings its own class of engineer to maintain this lifecycle:
 - **Software 2.0** -> ML Engineer
 - **Software 3.0** -> AI Engineer
 
-# IX. Open Source as the Accelerant
+## IX. Open Source as the Accelerant
 
 Every major software paradigm has been accelerated by open source. The question is never "if" but "how" and "where".
 
 Linux gave us one of the first open source operating systems, necessary abstractions over machine code. To maintain his project, Linus created Git (which later brought GitHub) which became the platform for open source software development. PyTorch and TensorFlow abstracted backpropagation and gradient computation when working with neural networks, lowering the barrier to entry and leading to an explosion in model innovation. Hugging Face was the ecosystem that allowed for the new components these abstractions created to be shared and composable. DSPy is introducing necessary abstractions over the prompting strategies and the LLMs themselves. It's a step towards a true democratization for building AI **applications or software**. The primitives are forming, but there is no ecosystem yet to collaborate on them.
 
-# X. The Right Level of Abstraction
+## X. The Right Level of Abstraction
 
 You can think of **primitives** as the smallest units of work for software. A good mental model is if diving a bit deeper into the component is a science of its own (or highly convoluted), then it's a primitive. For example, GEPA, one of the newer optimizers, is a primitive of Software 3.0 because it's necessary for the compilation of a successful declarative AI program. As an SDK, it's portable or reusable but if you wanted to maintain it yourself, you'd have to learn about Genetic-Pareto. Exa's web search tool is a primitive because their API is portable or reusable but the search algorithms under the hood are a science of its own.
 
@@ -148,7 +148,7 @@ For Software 3.0, these primitives include:
 - **Optimizers**: Algorithms that compile specifications into prompts.
 - **Models**: The LLM (or eventually SLM) being called and its configuration, such as temperature or weights.
 
-# XI. Why a Developer Collaboration Platform for Software 3.0 Needs to Exist
+## XI. Why a Developer Collaboration Platform for Software 3.0 Needs to Exist
 
 The goal of developer collaboration platforms is to streamline the lifecycle of the type of software it captures. GitHub aids in streamlining the SDLC for traditional code and Hugging Face for MLOps. Modaic aims to aid in streamlining the Ops for declarative AI software. Open source within this ecosystem is usually a fortunate byproduct of these platforms aiding the development flow. Value is given to those who participate in that lifecycle and leverage already-built primitives.
 
